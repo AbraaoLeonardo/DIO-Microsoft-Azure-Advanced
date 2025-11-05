@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: postgres:15.3-alpine
+    environment:
+      POSTGRES_USER: kzzyy2
+      POSTGRES_PASSWORD: kzzyy2
+      POSTGRES_DB: tarefas
+    ports:
+      - 5432:5432
+    restart: always
